@@ -1,5 +1,5 @@
 {
-  "name": "RyuuXiao-Api UI",
+  "name": "Cella-Api",
   "version": "v1.0.0",
   "description": "Simple API Gratis.",
   "bannerImage": "/src/banner.jpg",
@@ -7,8 +7,8 @@
     "status": "Online!"
   },
   "apiSettings": {
-    "creator": "RyuuXiao",
-    "apikey": ["RyuuXiao", "Xiao", "RyuuGanteng"]
+    "creator": "cella",
+    "apikey": ["calista", "free", "cella"]
   },
   "categories": [
     {
