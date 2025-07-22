@@ -1,0 +1,332 @@
+{
+  "name": "RyuuXiao-Api UI",
+  "version": "v1.0.0",
+  "description": "Simple API Gratis.",
+  "bannerImage": "/src/banner.jpg",
+  "header": {
+    "status": "Online!"
+  },
+  "apiSettings": {
+    "creator": "RyuuXiao",
+    "apikey": ["RyuuXiao", "Xiao", "RyuuGanteng"]
+  },
+  "categories": [
+    {
+      "name": "AI (Artificial Intelligence)",
+      "icon": "fas fa-robot",
+      "items": [
+        {
+          "name": "Chatgpt Turbo 3.0",
+          "desc": "Talk Chatgpt",
+          "path": "/ai/gptturbo?text=",
+          "status": "ready"
+        },
+        {
+          "name": "Dopple AI",
+          "desc": "Talk with Dopple AI",
+          "path": "/ai/dopple?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Dopple AI to respond to",
+            "apikey": "Your API key"
+          }
+        },
+        {
+          "name": "Felo AI",
+          "desc": "Talk with Felo AI",
+          "path": "/ai/felo?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Felo AI to respond to"
+          }
+        },
+        {
+          "name": "Koyuki AI",
+          "desc": "Talk with Koyuki AI",
+          "path": "/ai/koyuki?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Koyuki Iceflow to respond to"
+          }
+        },
+        {
+          "name": "Lumin AI",
+          "desc": "Talk with Lumin AI",
+          "path": "/ai/lumin?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Lumin AI to respond to"
+          }
+        },
+        {
+          "name": "Venice AI",
+          "desc": "Talk with Venice AI",
+          "path": "/ai/veniceai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Venice AI to respond to"
+          }
+        },
+        {
+          "name": "Gpt 4.1",
+          "desc": "Talk with GPT-4.1. Bisa memahami gambar dan lanjutkan percakapan.",
+          "path": "/ai/gpt-4.1?text=&imageUrl=",
+          "method": "GET",
+          "status": "ready",
+          "params": {
+            "text": {
+              "required": true,
+              "type": "string",
+              "desc": "Teks yang ingin dikirim ke GPT-4.1"
+            },
+            "imageUrl": {
+              "required": false,
+              "type": "string",
+              "desc": "URL gambar opsional untuk dianalisis oleh GPT-4.1"
+            }
+          }
+        },
+        {
+          "name": "Open AI",
+          "desc": "Talk with Open AI",
+          "path": "/ai/openai?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Venice AI to respond to"
+          }
+        },
+        {
+          "name": "Claude AI",
+          "desc": "Talk with Claude AI",
+          "path": "/ai/claude?text=",
+          "status": "ready",
+          "params": {
+            "text": "Text for Claude AI to respond to"
+          }
+        },
+        {
+          "name": "Blackbox AI",
+          "desc": "Talk with Blackbox AI. Bisa deteksi gambar & balas chat.",
+          "path": "/ai/blackbox?text=&imageUrl=&sessionid=",
+          "method": "GET",
+          "status": "ready",
+          "params": {
+            "text": {
+              "required": true,
+              "type": "string",
+              "desc": "Teks yang ingin dikirim ke Blackbox AI"
+            },
+            "imageUrl": {
+              "required": false,
+              "type": "string",
+              "desc": "URL gambar opsional untuk dianalisis oleh AI"
+            },
+            "sessionid": {
+              "required": false,
+              "type": "string",
+              "desc": "Session ID opsional untuk mempertahankan konteks"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Random",
+      "icon": "fas fa-random",
+      "items": [
+        {
+          "name": "Blue Archive",
+          "desc": "Blue Archive Random Images",
+          "path": "/random/ba",
+          "status": "ready"
+        }
+      ]
+    },
+    {
+      "name": "Search Tools",
+      "icon": "fas fa-search",
+      "items": [
+        {
+          "name": "YouTube",
+          "desc": "Video search",
+          "path": "/search/youtube?q=",
+          "status": "ready"
+        }
+      ]
+    },
+    {
+      "name": "Download Tools",
+      "icon": "fas fa-download",
+      "items": [
+        {
+          "name": "Tiktok",
+          "desc": "Download Video Tiktok",
+          "path": "/download/tiktok?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan URL nya"
+          }
+        },
+        {
+          "name": "Instagram",
+          "desc": "Download Reel/Video IG",
+          "path": "/download/instagram?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan URL nya"
+          }
+        },
+        {
+          "name": "YouTube",
+          "desc": "Download Video/Musik Dari YouTube",
+          "path": "/download/youtube?url=",
+          "status": "ready",
+          "params": {
+            "url": "Masukan URL nya"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stalk",
+      "icon": "fas fa-user-secret",
+      "items": [
+        {
+          "name": "Mobile Legends",
+          "desc": "Stalk akun Mobile Legends",
+          "path": "/stalk/mlbb?userId=&zoneId=&apikey=",
+          "status": "ready",
+          "params": {
+            "userId": "User ID Mobile Legends",
+            "zoneId": "Zone ID Mobile Legends",
+            "apikey": "Your API key"
+          }
+        },
+        {
+          "name": "Mobile Legends First TopUp",
+          "desc": "Cek First TopUp Moble Legends",
+          "path": "/stalk/mlbb2?userId=&zoneId=&apikey=",
+          "status": "ready",
+          "params": {
+            "userId": "User ID Mobile Legends",
+            "zoneId": "Zone ID Mobile Legends",
+            "apikey": "Your API key"
+          }
+        },
+        {
+          "name": "Free Fire",
+          "desc": "Stalk akun Free Fire",
+          "path": "/stalk/ff?id=&apikey=",
+          "status": "ready",
+          "params": {
+            "id": "Player ID Free Fire"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orderkuota Gateway",
+      "icon": "fas fa-wallet",
+      "items": [
+        {
+          "name": "Create Payment",
+          "desc": "Create qris payment",
+          "path": "/orderkuota/createpayment?apikey=&amount=&codeqr=",
+          "status": "ready",
+          "innerDesc": "Buy apikey >> wa.me/6285143569870",
+          "params": {
+            "apikey": "Your API key",
+            "amount": "Total harga",
+            "codeqr": "Kode unik QR"
+          }
+        },
+        {
+          "name": "Cek Status",
+          "desc": "Cek status payment",
+          "path": "/orderkuota/cekstatus?apikey=&merchant=&keyorkut=",
+          "status": "ready",
+          "innerDesc": "Buy apikey >> wa.me/6285143569870",
+          "params": {
+            "apikey": "Your API key",
+            "merchant": "Merchant ID",
+            "keyorkut": "Key untuk validasi"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "icon": "fas fa-tools",
+      "items": [
+        {
+          "name": "Fake NGL Generator",
+          "desc": "Generate pertanyaan dan jawaban gaya NGL",
+          "path": "/tools/ngl?title=&text=",
+          "status": "ready",
+          "params": {
+            "title": "Judul pertanyaan",
+            "text": "Isi pertanyaan atau jawaban"
+          }
+        },
+        {
+          "name": "Fake TikTok Generator",
+          "desc": "Buat profil TikTok palsu dengan nama dan foto",
+          "path": "/tools/faketiktok?name=&username=&pp=",
+          "status": "ready",
+          "params": {
+            "name": "Nama pengguna",
+            "username": "Username TikTok palsu",
+            "pp": "URL foto profil"
+          }
+        },
+        {
+          "name": "Remini",
+          "desc": "Tingkatkan kualitas foto buram",
+          "path": "/tools/remini?image=",
+          "status": "error",
+          "params": {
+            "image": "URL gambar yang ingin ditingkatkan"
+          }
+        },
+        {
+          "name": "Emojimix",
+          "desc": "Gabungkan dua emoji jadi satu",
+          "path": "/tools/emojimix?emoji1=&emoji2=",
+          "status": "error",
+          "params": {
+            "emoji1": "Emoji pertama (misal: 😀)",
+            "emoji2": "Emoji kedua (misal: 💀)"
+          }
+        },
+        {
+          "name": "Removebg",
+          "desc": "Hapus background gambar",
+          "path": "/tools/removebg?apikey=&imageUrl=",
+          "status": "ready",
+          "params": {
+            "imageUrl": "URL gambar yang ingin dihapus background-nya"
+          }
+        },
+        {
+          "name": "Jarak",
+          "desc": "Hitung jarak antar dua lokasi",
+          "path": "/tools/jarak?lokasi1=&lokasi2=",
+          "status": "error",
+          "params": {
+            "lokasi1": "Lokasi pertama (contoh: Jakarta)",
+            "lokasi2": "Lokasi kedua (contoh: Bandung)"
+          }
+        },
+        {
+          "name": "Brat",
+          "desc": "Ubah Teks Menjadi Stoker",
+          "path": "/tools/brat?text=",
+          "status": "error",
+          "params": {
+            "text": "Teks yang ingin diubah ke gaya Bratz"
+          }
+        }
+      ]
+    }
+  ]
+}
